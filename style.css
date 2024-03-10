@@ -1,0 +1,43 @@
+main {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+img {
+    position: absolute;
+    z-index: 2;
+}
+
+img:hover ~ .info {
+    left: 450px;
+}
+
+.info:hover {
+    left: 450px;
+    z-index: 3;
+}
+
+.info {
+    width: 250px;
+    padding: 20px;
+    left: 0;
+    top: 50px;
+    position: absolute;
+    border-right: solid 5px red;
+    border-top: solid 5px red;
+    transition: left 300ms;
+}
+
+.info h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.info p {
+    font-family: monospace;
+}
